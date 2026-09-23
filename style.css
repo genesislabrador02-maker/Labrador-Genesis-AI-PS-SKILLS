@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap');
+:root{--bg:#080808;--panel:#101010;--panel2:#151515;--text:#f0f0f0;--muted:#858585;--line:#303030;--white:#f4f4f4}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 75% 12%,#272727 0,transparent 30%),radial-gradient(circle at 10% 80%,#1a1a1a 0,transparent 30%),var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif}.noise{position:fixed;inset:0;pointer-events:none;z-index:50;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}a{text-decoration:none;color:inherit}.site-header{position:fixed;z-index:40;top:0;left:0;right:0;height:72px;padding:0 4vw;display:flex;align-items:center;justify-content:space-between;background:linear-gradient(#080808ed,transparent);backdrop-filter:blur(9px)}.monogram{font:900 27px/1 "Barlow Condensed";letter-spacing:-2px}.site-header nav{display:flex;gap:32px}.site-header nav a,.menu-btn{font:600 10px "Barlow Condensed";letter-spacing:2px;color:#aaa}.site-header nav a:hover{color:#fff}.menu-btn{display:none;background:none;border:0;color:#eee;font-size:20px}.screen{width:min(1180px,92vw);margin:90px auto 0;background:linear-gradient(115deg,#090909,#151515 62%,#0b0b0b);border:1px solid #1d1d1d;box-shadow:0 35px 90px #000;position:relative;overflow:hidden}.section-number{position:absolute;left:25px;top:25px;font:600 12px "Barlow Condensed";letter-spacing:2px;color:#777}.eyebrow{margin:0;color:#888;font:600 11px "Barlow Condensed";letter-spacing:3px;text-transform:uppercase}.hero{min-height:720px;display:grid;grid-template-columns:38% 62%;align-items:center;padding:80px 7vw}.portrait-frame{position:relative;max-width:370px;aspect-ratio:1/1;background:#222;overflow:hidden}.portrait-frame:after{content:"";position:absolute;inset:0;background:linear-gradient(135deg,transparent 40%,#0009)}.portrait-frame img{width:100%;height:100%;object-fit:cover;filter:grayscale(1);transform:scale(1.35);object-position:center 18%}.portrait-mark{position:absolute;z-index:2;left:22px;bottom:18px;font:900 90px "Barlow Condensed";color:#eee;opacity:.18}.hero-right{padding-left:5vw}.hero h1{font:900 clamp(95px,12vw,170px)/.73 "Barlow Condensed";letter-spacing:-4px;margin:25px 0 22px;text-transform:uppercase}.hero-meta{display:flex;justify-content:space-between;max-width:560px;border-top:1px solid #333;padding-top:14px;color:#999;font:500 11px "Barlow Condensed";letter-spacing:3px}.enter-link{display:inline-flex;gap:14px;align-items:center;margin-top:48px;font:600 11px "Barlow Condensed";letter-spacing:4px}.enter-link span{width:8px;height:8px;background:#eee}.side-note{position:absolute;right:28px;top:40%;writing-mode:vertical-rl;color:#666;font:500 10px "Barlow Condensed";letter-spacing:3px}.section-tabs{display:flex;justify-content:center;gap:25px;padding-top:28px}.section-tabs a{font:600 10px "Barlow Condensed";letter-spacing:2px;color:#666}.section-tabs .active{color:#111;background:#eee;padding:5px 13px;border-radius:20px}.profile{padding:0 7vw 80px}.profile-grid{display:grid;grid-template-columns:39% 61%;gap:7vw;align-items:center;padding-top:62px}.profile-visual{position:relative}.profile-visual h2,.section-heading h2,.education h2{font:900 clamp(55px,7vw,100px)/.78 "Barlow Condensed";margin:10px 0 28px;letter-spacing:-2px}.profile-photo{width:100%;height:500px;object-fit:cover;filter:grayscale(1);background:#222}.vertical-label{position:absolute;left:-30px;bottom:20px;writing-mode:vertical-rl;color:#666;font:500 10px "Barlow Condensed";letter-spacing:3px}.profile-copy{padding-top:35px}.profile-copy .intro{font-size:16px;line-height:1.65;color:#ddd;max-width:640px}.body-copy{font-size:12px;line-height:1.8;color:#888;max-width:640px}.tool-block{margin-top:34px}.tools{display:flex;flex-wrap:wrap;gap:9px;margin-top:14px}.tools div{display:flex;align-items:center;gap:9px;background:#242424;padding:7px 10px 7px 7px;border-radius:8px}.tools b{width:39px;height:39px;border-radius:7px;background:#333;display:grid;place-items:center;font:800 14px Inter}.tools span{font:600 9px Inter;color:#aaa;letter-spacing:.5px}.mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:35px;padding-top:25px;border-top:1px solid #303030}.mini-grid h3{font:800 18px "Barlow Condensed";margin:12px 0 7px}.mini-grid p:not(.eyebrow){font-size:11px;color:#999;line-height:1.6}.mini-grid small{color:#666}.experience,.works,.education,.contact{padding:75px 7vw}.section-heading{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:55px}.section-heading h2{margin:10px 0 0}.section-caption{text-align:right;color:#666;font:600 10px/1.5 "Barlow Condensed";letter-spacing:2px}.timeline{border-top:1px solid #333}.job{display:grid;grid-template-columns:20% 80%;padding:30px 0;border-bottom:1px solid #292929}.job.featured{background:linear-gradient(90deg,#151515,transparent);margin:0 -25px;padding-left:25px;padding-right:25px}.year{font:600 12px/1.35 "Barlow Condensed";letter-spacing:2px;color:#777}.role{font:600 10px "Barlow Condensed";letter-spacing:2px;color:#888}.job h3{font:800 24px "Barlow Condensed";margin:7px 0 12px}.job ul{margin:0;padding-left:17px;color:#999;font-size:11px;line-height:1.7;max-width:800px}.job.compact p{margin:8px 0 0;color:#888;font-size:11px;line-height:1.7;max-width:800px}.filter-bar{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}.filter{background:transparent;color:#777;border:1px solid #333;border-radius:20px;padding:8px 14px;font:600 10px "Barlow Condensed";letter-spacing:2px;cursor:pointer}.filter.active,.filter:hover{background:#eee;color:#111}.work-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.work-card{position:relative;min-height:270px;overflow:hidden;background:#1c1c1c;border:1px solid #292929;cursor:pointer}.work-card img{width:100%;height:100%;min-height:270px;object-fit:cover;filter:grayscale(1);transition:.45s}.work-card:hover img{transform:scale(1.06);filter:grayscale(.25)}.work-card:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 30%,#000d)}.work-info{position:absolute;left:17px;right:17px;bottom:16px;z-index:2}.work-info span{font:600 9px "Barlow Condensed";letter-spacing:2px;color:#aaa}.work-info h3{font:800 19px "Barlow Condensed";margin:4px 0 0}.edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:8vw}.edu-item{border-top:1px solid #333;padding:20px 0}.edu-item span{font:600 10px "Barlow Condensed";letter-spacing:2px;color:#777}.edu-item h3{font:800 22px "Barlow Condensed";margin:10px 0 5px}.edu-item p{font-size:11px;color:#888}.leadership{list-style:none;margin:0;padding:0;border-top:1px solid #333}.leadership li{padding:17px 0;border-bottom:1px solid #292929}.leadership strong{display:block;font:800 19px "Barlow Condensed"}.leadership span{display:block;color:#888;font-size:11px;margin-top:4px}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:8vw;align-items:center;min-height:500px}.contact h2{font:900 clamp(75px,9vw,130px)/.75 "Barlow Condensed";margin:15px 0 40px;letter-spacing:-3px}.contact-list{display:grid;gap:14px}.contact-list a,.contact-list span{font-size:11px;color:#aaa}.contact-list b{display:inline-block;width:45px;color:#555;font:700 10px "Barlow Condensed";letter-spacing:2px}.contact-right{position:relative;min-height:430px}.contact-right img{position:absolute;right:0;top:0;width:270px;height:270px;border-radius:50%;object-fit:cover;filter:grayscale(1)}.display-thanks{position:absolute;left:0;bottom:0;font:900 clamp(65px,8vw,120px)/.72 "Barlow Condensed";letter-spacing:-3px}.contact footer{border-top:1px solid #333;padding-top:20px;display:flex;justify-content:space-between;font:600 9px "Barlow Condensed";letter-spacing:2px;color:#666}.modal{position:fixed;inset:0;background:#070707f5;z-index:100;display:none;align-items:center;justify-content:center;padding:6vw;backdrop-filter:blur(12px)}.modal.open{display:flex}.modal img{width:min(60vw,800px);max-height:82vh;object-fit:contain;filter:grayscale(1)}.modal-copy{max-width:330px;padding:35px}.modal-copy span{font:600 10px "Barlow Condensed";letter-spacing:2px;color:#888}.modal-copy h2{font:900 55px/0.8 "Barlow Condensed";margin:12px 0 20px}.modal-copy p{font-size:11px;line-height:1.7;color:#888}.modal-close{position:absolute;right:30px;top:20px;background:none;border:0;color:#fff;font-size:35px;cursor:pointer}
+@media(max-width:850px){.site-header nav{display:none}.menu-btn{display:block}.hero{grid-template-columns:1fr;padding-top:95px}.hero-right{padding:45px 0 0}.side-note{display:none}.profile-grid,.contact-grid,.edu-grid{grid-template-columns:1fr}.profile-photo{height:430px}.work-grid{grid-template-columns:repeat(2,1fr)}.job{grid-template-columns:1fr;gap:12px}.contact-right{min-height:380px;margin-top:20px}.modal{flex-direction:column;overflow:auto}.modal img{width:90vw}.modal-copy{padding:20px 0}.display-thanks{position:static;margin-top:300px}}
+@media(max-width:520px){.screen{width:94vw;margin-top:78px}.hero,.profile,.experience,.works,.education,.contact{padding-left:6vw;padding-right:6vw}.hero h1{font-size:82px}.profile-visual h2,.section-heading h2,.education h2{font-size:64px}.work-grid{grid-template-columns:1fr}.section-tabs{gap:13px}.section-tabs a{font-size:9px}.mini-grid{grid-template-columns:1fr}.contact h2{font-size:78px}}
+
+
+/* ===== V2 REWORK ===== */
+
+/* Typography-first hero: no personal photo */
+.hero{grid-template-columns:34% 66%}
+.hero-left{display:flex;align-items:center;justify-content:center}
+.hero-mark{width:min(330px,80%);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 30%,#303030,#171717 62%,#101010);border:1px solid #333;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;box-shadow:inset 0 0 70px #000,0 25px 70px #000}
+.hero-mark:before{content:"";position:absolute;inset:20px;border:1px solid #333;border-radius:50%;opacity:.55}
+.hero-mark span{font:900 95px/1 "Barlow Condensed";letter-spacing:-5px;color:#eee;opacity:.9}
+.hero-mark small{font:600 9px/1.6 "Barlow Condensed";letter-spacing:3px;text-align:center;color:#777;margin-top:10px}
+.hero-right{padding-left:4vw}
+
+/* Profile photo removed */
+.profile-visual{display:flex;flex-direction:column}
+.profile-placeholder{height:390px;background:radial-gradient(circle at 50% 42%,#292929,#141414 65%);border:1px solid #292929;margin-top:5px;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.profile-placeholder:before,.profile-placeholder:after{content:"";position:absolute;background:#333}
+.profile-placeholder:before{width:1px;height:100%;left:50%;top:0}
+.profile-placeholder:after{height:1px;width:100%;top:50%;left:0}
+.profile-placeholder span{font:900 125px/1 "Barlow Condensed";letter-spacing:-8px;color:#eee;opacity:.12;z-index:1}
+.profile-placeholder small{font:600 9px/1.6 "Barlow Condensed";letter-spacing:4px;color:#666;text-align:center;z-index:1}
+
+/* Software colors: recognizable, restrained, and still monochrome overall */
+.tools{gap:10px}
+.tools .tool{border:1px solid #2c2c2c;position:relative;overflow:hidden;transition:.25s}
+.tools .tool:hover{transform:translateY(-3px);border-color:#555}
+.tools .tool b{font-weight:800}
+.tools .photoshop b{background:#001e36;color:#31a8ff;border:1px solid #073e61}
+.tools .illustrator b{background:#2b1105;color:#ff9a00;border:1px solid #6b2e00}
+.tools .capcut b{background:#050505;color:#fff;border:1px solid #555}
+.tools .canva b{background:linear-gradient(135deg,#00c4cc,#7d2ae8);color:#fff;border:0}
+.tools .chatgpt b{background:#101d19;color:#74d6b1;border:1px solid #295344}
+.tools .photoshop:before,.tools .illustrator:before,.tools .canva:before,.tools .chatgpt:before{content:"";position:absolute;left:0;top:0;width:2px;height:100%}
+.tools .photoshop:before{background:#31a8ff}.tools .illustrator:before{background:#ff9a00}.tools .canva:before{background:#7d2ae8}.tools .chatgpt:before{background:#74d6b1}
+
+/* Contact: closely follows the new reference composition */
+.contact{min-height:720px;padding:72px 7vw 28px;background:linear-gradient(115deg,#090909,#141414 60%,#0b0b0b)}
+.contact-grid{min-height:585px;display:grid;grid-template-columns:52% 48%;gap:2vw;align-items:center}
+.contact-left{height:100%;display:flex;flex-direction:column;justify-content:space-between;padding:5px 0 15px}
+.contact-orb{width:min(375px,75%);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 42% 38%,#2c2c2c,#202020 72%);display:flex;align-items:center;justify-content:center;flex-direction:column;position:relative;box-shadow:inset 0 0 80px #000}
+.contact-orb:after{content:"";position:absolute;inset:24px;border:1px solid #343434;border-radius:50%}
+.contact-orb span{font:900 95px/1 "Barlow Condensed";letter-spacing:-5px;color:#ddd;opacity:.11;z-index:1}
+.contact-orb small{font:600 8px/1.6 "Barlow Condensed";letter-spacing:3px;text-align:center;color:#777;z-index:1}
+.contact-list{display:grid;gap:18px;margin-top:35px}
+.contact-list a,.contact-list>span{display:flex;align-items:center;gap:18px;font-size:12px;color:#ddd}
+.contact-list b{width:44px;height:44px;border:1px solid #505050;border-radius:50%;display:grid;place-items:center;color:#eee;font:700 11px "Barlow Condensed";letter-spacing:1px;flex:0 0 auto}
+.contact-list a>span,.contact-list>span>span{font-weight:500;letter-spacing:.3px}
+.contact-right{padding-left:2vw}
+.contact-right .eyebrow{margin-bottom:14px}
+.contact-right h2{font:900 clamp(58px,6.4vw,92px)/.8 "Barlow Condensed";letter-spacing:-2px;margin:0 0 28px}
+.display-thanks{font:900 clamp(80px,9.2vw,135px)/.72 "Barlow Condensed";letter-spacing:-4px;color:#f0f0f0}
+.display-thanks span{font-size:.86em}
+.contact footer{margin-top:0}
+
+/* Remove the old contact-image behavior entirely */
+.contact-right img{display:none}
+
+/* Keep project images as placeholders for now, but never show the personal profile image */
+
+/* CONTACT PANEL V3 — alignment only */
+.contact-right{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:flex-start;
+  min-height:500px;
+}
+.contact-right h2{
+  margin:14px 0 42px;
+}
+.display-thanks{
+  position:static;
+  margin:0;
+  text-align:left;
+}
+
+/* IMAGE SLOTS — V4
+   Just put hero.jpg and profile.jpg inside /images.
+*/
+.hero{grid-template-columns:42% 88%}
+.hero-left{display: flex;
+    align-items: center;
+    justify-content: center;
+transform: translateY(-250px);
+}
+.hero-image{
+      display: flex;
+    align-items: center;
+    justify-content: center;
+  width:100%;
+  max-width:400px;
+  aspect-ratio:4/5;
+  transform: scale(2.50);
+  background:#171717;
+  border:1px solid #2d2d2d;
+  overflow:hidden;
+  position:relative;
+}
+.hero-image:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(135deg,transparent 50%,#0007);
+  pointer-events:none;
+}
+.hero-image img{
+  width:400%;
+  height:400%;
+  object-fit:cover;
+  display:block;
+  filter:grayscale(100%);
+}
+
+/* Second panel image slot */
+.profile-image{
+  width:100%;
+  height:390px;
+  background:#171717;
+  border:1px solid #292929;
+  overflow:hidden;
+  position:relative;
+  transform: scale(2.00);
+
+}
+.profile-image:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(135deg,transparent 50%,#0007);
+  pointer-events:none;
+}
+.profile-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  filter:grayscale(100%);
+transform: translateY(-150px);
+}
+@media(max-width:850px){
+  .hero{grid-template-columns:1fr}
+  .hero-left{padding-right:0}
+}
+
+/* Portfolio V2 — AI + Photoshop Works */
+.work-grid{grid-template-columns:repeat(3,minmax(0,1fr));}
+.work-card{cursor:pointer;}
+.work-card img{aspect-ratio:4/3;object-fit:cover;}
+.filter-bar{flex-wrap:wrap;}
+.modal-copy p{max-width:620px;line-height:1.7;color:#aaa;}
+body.modal-open{overflow:hidden;}
+@media (max-width: 900px){
+  .work-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+}
+@media (max-width: 600px){
+  .work-grid{grid-template-columns:1fr;}
+  .work-card img{aspect-ratio:16/11;}
+  .filter-bar{gap:8px;}
+  .filter{font-size:10px;}
+}
+
+/* Modal artwork: keep original colors when opened */
+.modal img{
+  filter:none !important;
+  -webkit-filter:none !important;
+}
+
+/* CLEAN IMAGE TREATMENT — NO BOX / NO BORDER */
+.hero-left{padding-right:40px;}
+.hero-image{
+  width:280px;
+  height:380px;
+  max-width:none;
+  aspect-ratio:auto;
+  background:transparent;
+  border:none;
+  overflow:visible;
+  position:relative;
+}
+.hero-image:after{display:none;}
+.hero-image img{
+  width:280px;
+  height:380px;
+  object-fit:cover;
+  object-position:center;
+  display:block;
+  filter:grayscale(100%);
+}
+
+.profile-image{
+  width:100%;
+  height:520px;
+  background:transparent;
+  border:none;
+  overflow:visible;
+  position:relative;
+}
+.profile-image:after{display:none;}
+.profile-image img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center bottom;
+  display:block;
+  background:transparent;
+  filter:grayscale(100%);
+}
+
+@media(max-width:850px){
+  .hero-left{padding-right:0;}
+  .hero-image{margin:0 auto;}
+  .profile-image{height:460px;}
+}
+@media(max-width:520px){
+  .hero-image{width:240px;height:325px;}
+  .hero-image img{width:240px;height:325px;}
+  .profile-image{height:400px;}
+}
+
+/* Work thumbnails stay editorial; opened image is full color. */
+.modal img#modalImage{filter:none;}
+
+
+/* FINAL FREE-FLOATING PORTRAITS — upload transparent PNGs */
+.hero-image,
+.profile-image{
+  background:transparent !important;
+  border:0 !important;
+  box-shadow:none !important;
+  outline:0 !important;
+  overflow:visible !important;
+}
+.hero-image:before,
+.hero-image:after,
+.profile-image:before,
+.profile-image:after{
+  content:none !important;
+  display:none !important;
+  background:none !important;
+}
+.hero-image img,
+.profile-image img{
+  background:transparent !important;
+  border:0 !important;
+  box-shadow:none !important;
+  outline:0 !important;
+  display:block;
+  object-fit:contain !important;
+  filter:grayscale(100%);
+  mix-blend-mode:normal;
+}
+.hero-image img{
+  width:280px !important;
+  height:380px !important;
+  object-position:center bottom !important;
+}
+.profile-image{
+  width:100% !important;
+  height:520px !important;
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+}
+.profile-image img{
+  width:100% !important;
+  height:100% !important;
+  object-position:center bottom !important;
+}
+@media(max-width:850px){
+  .profile-image{height:460px !important;}
+}
+@media(max-width:520px){
+  .hero-image{width:240px !important;height:325px !important;}
+  .hero-image img{width:240px !important;height:325px !important;}
+  .profile-image{height:400px !important;}
+}

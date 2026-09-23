@@ -1,0 +1,13 @@
+IMAGE UPLOAD GUIDE
+
+1. FIRST PAGE / HERO
+Replace images/hero.png with your own TRANSPARENT PNG portrait.
+Keep the filename: hero.png
+
+2. SECOND PAGE / PROFILE
+Replace images/profile.png with your own TRANSPARENT PNG portrait.
+Keep the filename: profile.png
+
+Important: PNG must have a transparent background. If the photo still has a rectangular background, that rectangle will appear on the website because it is part of the image itself.
+
+The HTML/CSS image slots have NO border, box, frame, background, or overlay.
